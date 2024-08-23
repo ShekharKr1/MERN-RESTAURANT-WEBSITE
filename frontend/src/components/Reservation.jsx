@@ -19,6 +19,7 @@ const Reservation = () => {
     try {
       const { data } = await axios.post(
         "http://localhost:3000/api/v1/reservation/send",
+
         { firstName, lastName, date, time, email, phone },
         {
           headers: {
